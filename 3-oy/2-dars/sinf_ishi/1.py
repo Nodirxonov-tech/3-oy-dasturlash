@@ -288,12 +288,20 @@
 
 # 5-masala.
 
-harf = input("Harfni kiriting: ")
-n = int(input("n butun sonni kiriting: "))
+# harf = input("Harfni kiriting: ")
+# n = int(input("n butun sonni kiriting: "))
 
-if not harf.isalpha():
-    print("Bunday harf yo'q")
-else:
-    start = (ord("A") if harf.isupper() else ord("a"))  # Harfning alifbodagi o'rnini aniqlaymiz (0-25 oraliqda)
-    yangi_o_rin = (ord(harf) - start + n) % 26  # Yangi harfning o'rnini hisoblaymiz (modul 26 alifbo aylanishi uchun)
-    print(chr(start + yangi_o_rin))  # Yangi harfni chiqaramiz
+# if not harf.isalpha():
+#     print("Bunday harf yo'q")
+# else:
+#     start = (ord("A") if harf.isupper() else ord("a"))  # Harfning alifbodagi o'rnini aniqlaymiz (0-25 oraliqda)
+#     yangi_o_rin = (ord(harf) - start + n) % 26  # Yangi harfning o'rnini hisoblaymiz (modul 26 alifbo aylanishi uchun)
+#     print(chr(start + yangi_o_rin))  # Yangi harfni chiqaramiz
+
+# # 6-masala.
+
+# harf=input("Harf kiriting: ")
+# natija=harf.upper()
+# print(natija)
+
+
