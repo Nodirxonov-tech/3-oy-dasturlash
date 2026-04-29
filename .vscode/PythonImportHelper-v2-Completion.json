@@ -1,0 +1,407 @@
+[
+    {
+        "label": "fayl_hajmi",
+        "kind": 5,
+        "importPath": "3-oy.1-dars.uy_ishi.1",
+        "description": "3-oy.1-dars.uy_ishi.1",
+        "peekOfCode": "fayl_hajmi = int(input(\"Fayl hajmini (Mb) da kiriting: \"))\ninternet_tezlik = int(input(\"internet tezligini kiriting: (Mb/s)\"))\nvaqt = (fayl_hajmi * 8) / internet_tezlik\nprint(\"fayl\", vaqt, \"soniyada yuklanadi.\")",
+        "detail": "3-oy.1-dars.uy_ishi.1",
+        "documentation": {}
+    },
+    {
+        "label": "internet_tezlik",
+        "kind": 5,
+        "importPath": "3-oy.1-dars.uy_ishi.1",
+        "description": "3-oy.1-dars.uy_ishi.1",
+        "peekOfCode": "internet_tezlik = int(input(\"internet tezligini kiriting: (Mb/s)\"))\nvaqt = (fayl_hajmi * 8) / internet_tezlik\nprint(\"fayl\", vaqt, \"soniyada yuklanadi.\")",
+        "detail": "3-oy.1-dars.uy_ishi.1",
+        "documentation": {}
+    },
+    {
+        "label": "vaqt",
+        "kind": 5,
+        "importPath": "3-oy.1-dars.uy_ishi.1",
+        "description": "3-oy.1-dars.uy_ishi.1",
+        "peekOfCode": "vaqt = (fayl_hajmi * 8) / internet_tezlik\nprint(\"fayl\", vaqt, \"soniyada yuklanadi.\")",
+        "detail": "3-oy.1-dars.uy_ishi.1",
+        "documentation": {}
+    },
+    {
+        "label": "harf",
+        "kind": 5,
+        "importPath": "3-oy.1-dars.uy_ishi.10",
+        "description": "3-oy.1-dars.uy_ishi.10",
+        "peekOfCode": "harf = input(\"Harfni kiriting: \")\nkod = ord(harf)\nykod = kod + 3\nshharf = chr(ykod)\nprint(f\"Kod: {kod} = {ykod} = {shharf}\")",
+        "detail": "3-oy.1-dars.uy_ishi.10",
+        "documentation": {}
+    },
+    {
+        "label": "kod",
+        "kind": 5,
+        "importPath": "3-oy.1-dars.uy_ishi.10",
+        "description": "3-oy.1-dars.uy_ishi.10",
+        "peekOfCode": "kod = ord(harf)\nykod = kod + 3\nshharf = chr(ykod)\nprint(f\"Kod: {kod} = {ykod} = {shharf}\")",
+        "detail": "3-oy.1-dars.uy_ishi.10",
+        "documentation": {}
+    },
+    {
+        "label": "ykod",
+        "kind": 5,
+        "importPath": "3-oy.1-dars.uy_ishi.10",
+        "description": "3-oy.1-dars.uy_ishi.10",
+        "peekOfCode": "ykod = kod + 3\nshharf = chr(ykod)\nprint(f\"Kod: {kod} = {ykod} = {shharf}\")",
+        "detail": "3-oy.1-dars.uy_ishi.10",
+        "documentation": {}
+    },
+    {
+        "label": "shharf",
+        "kind": 5,
+        "importPath": "3-oy.1-dars.uy_ishi.10",
+        "description": "3-oy.1-dars.uy_ishi.10",
+        "peekOfCode": "shharf = chr(ykod)\nprint(f\"Kod: {kod} = {ykod} = {shharf}\")",
+        "detail": "3-oy.1-dars.uy_ishi.10",
+        "documentation": {}
+    },
+    {
+        "label": "soz",
+        "kind": 5,
+        "importPath": "3-oy.1-dars.uy_ishi.11",
+        "description": "3-oy.1-dars.uy_ishi.11",
+        "peekOfCode": "soz = input(\"soz kiriting: \")\nprint(soz[::-1])",
+        "detail": "3-oy.1-dars.uy_ishi.11",
+        "documentation": {}
+    },
+    {
+        "label": "kod",
+        "kind": 5,
+        "importPath": "3-oy.1-dars.uy_ishi.12",
+        "description": "3-oy.1-dars.uy_ishi.12",
+        "peekOfCode": "kod = input(\"Parolni kiriting: \")\nuzunlik = len(kod)\nkuch = uzunlik >= 8\nprint(f\"Parol uzunligi: {uzunlik} belgi - {kuch}\")",
+        "detail": "3-oy.1-dars.uy_ishi.12",
+        "documentation": {}
+    },
+    {
+        "label": "uzunlik",
+        "kind": 5,
+        "importPath": "3-oy.1-dars.uy_ishi.12",
+        "description": "3-oy.1-dars.uy_ishi.12",
+        "peekOfCode": "uzunlik = len(kod)\nkuch = uzunlik >= 8\nprint(f\"Parol uzunligi: {uzunlik} belgi - {kuch}\")",
+        "detail": "3-oy.1-dars.uy_ishi.12",
+        "documentation": {}
+    },
+    {
+        "label": "kuch",
+        "kind": 5,
+        "importPath": "3-oy.1-dars.uy_ishi.12",
+        "description": "3-oy.1-dars.uy_ishi.12",
+        "peekOfCode": "kuch = uzunlik >= 8\nprint(f\"Parol uzunligi: {uzunlik} belgi - {kuch}\")",
+        "detail": "3-oy.1-dars.uy_ishi.12",
+        "documentation": {}
+    },
+    {
+        "label": "telfon",
+        "kind": 5,
+        "importPath": "3-oy.1-dars.uy_ishi.13",
+        "description": "3-oy.1-dars.uy_ishi.13",
+        "peekOfCode": "telfon = input(\"Telfon raqamingizni kiriting (+998-90-123-45-67) : \")\nclean_telfon = telfon.replace(\"+\", \"\").replace(\"-\", \"\")\nprint(clean_telfon)",
+        "detail": "3-oy.1-dars.uy_ishi.13",
+        "documentation": {}
+    },
+    {
+        "label": "clean_telfon",
+        "kind": 5,
+        "importPath": "3-oy.1-dars.uy_ishi.13",
+        "description": "3-oy.1-dars.uy_ishi.13",
+        "peekOfCode": "clean_telfon = telfon.replace(\"+\", \"\").replace(\"-\", \"\")\nprint(clean_telfon)",
+        "detail": "3-oy.1-dars.uy_ishi.13",
+        "documentation": {}
+    },
+    {
+        "label": "ism",
+        "kind": 5,
+        "importPath": "3-oy.1-dars.uy_ishi.15",
+        "description": "3-oy.1-dars.uy_ishi.15",
+        "peekOfCode": "ism = input(\"Ismni kiriting: \")\nA = ord(ism[0])\nl = ord(ism[1])\ni = ord(ism[2])\ny = ord(ism[0]) + ord(ism[1]) + ord(ism[2])\nprint(f\"A = {A}\\nl = {l}\\ni = {i}\\nJami: {y}\")",
+        "detail": "3-oy.1-dars.uy_ishi.15",
+        "documentation": {}
+    },
+    {
+        "label": "A",
+        "kind": 5,
+        "importPath": "3-oy.1-dars.uy_ishi.15",
+        "description": "3-oy.1-dars.uy_ishi.15",
+        "peekOfCode": "A = ord(ism[0])\nl = ord(ism[1])\ni = ord(ism[2])\ny = ord(ism[0]) + ord(ism[1]) + ord(ism[2])\nprint(f\"A = {A}\\nl = {l}\\ni = {i}\\nJami: {y}\")",
+        "detail": "3-oy.1-dars.uy_ishi.15",
+        "documentation": {}
+    },
+    {
+        "label": "l",
+        "kind": 5,
+        "importPath": "3-oy.1-dars.uy_ishi.15",
+        "description": "3-oy.1-dars.uy_ishi.15",
+        "peekOfCode": "l = ord(ism[1])\ni = ord(ism[2])\ny = ord(ism[0]) + ord(ism[1]) + ord(ism[2])\nprint(f\"A = {A}\\nl = {l}\\ni = {i}\\nJami: {y}\")",
+        "detail": "3-oy.1-dars.uy_ishi.15",
+        "documentation": {}
+    },
+    {
+        "label": "i",
+        "kind": 5,
+        "importPath": "3-oy.1-dars.uy_ishi.15",
+        "description": "3-oy.1-dars.uy_ishi.15",
+        "peekOfCode": "i = ord(ism[2])\ny = ord(ism[0]) + ord(ism[1]) + ord(ism[2])\nprint(f\"A = {A}\\nl = {l}\\ni = {i}\\nJami: {y}\")",
+        "detail": "3-oy.1-dars.uy_ishi.15",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "3-oy.1-dars.uy_ishi.15",
+        "description": "3-oy.1-dars.uy_ishi.15",
+        "peekOfCode": "y = ord(ism[0]) + ord(ism[1]) + ord(ism[2])\nprint(f\"A = {A}\\nl = {l}\\ni = {i}\\nJami: {y}\")",
+        "detail": "3-oy.1-dars.uy_ishi.15",
+        "documentation": {}
+    },
+    {
+        "label": "print(f\"A",
+        "kind": 5,
+        "importPath": "3-oy.1-dars.uy_ishi.15",
+        "description": "3-oy.1-dars.uy_ishi.15",
+        "peekOfCode": "print(f\"A = {A}\\nl = {l}\\ni = {i}\\nJami: {y}\")",
+        "detail": "3-oy.1-dars.uy_ishi.15",
+        "documentation": {}
+    },
+    {
+        "label": "son",
+        "kind": 5,
+        "importPath": "3-oy.1-dars.uy_ishi.2",
+        "description": "3-oy.1-dars.uy_ishi.2",
+        "peekOfCode": "son = int(input(\"Uch xonali son kiriting: \"))\nyuzlik = son // 100\nonlik = (son // 10) % 10\nbirlik = son % 10\nyigindi = yuzlik + onlik + birlik\nprint(\"Raqamlar yigindisi: \", yigindi)",
+        "detail": "3-oy.1-dars.uy_ishi.2",
+        "documentation": {}
+    },
+    {
+        "label": "yuzlik",
+        "kind": 5,
+        "importPath": "3-oy.1-dars.uy_ishi.2",
+        "description": "3-oy.1-dars.uy_ishi.2",
+        "peekOfCode": "yuzlik = son // 100\nonlik = (son // 10) % 10\nbirlik = son % 10\nyigindi = yuzlik + onlik + birlik\nprint(\"Raqamlar yigindisi: \", yigindi)",
+        "detail": "3-oy.1-dars.uy_ishi.2",
+        "documentation": {}
+    },
+    {
+        "label": "onlik",
+        "kind": 5,
+        "importPath": "3-oy.1-dars.uy_ishi.2",
+        "description": "3-oy.1-dars.uy_ishi.2",
+        "peekOfCode": "onlik = (son // 10) % 10\nbirlik = son % 10\nyigindi = yuzlik + onlik + birlik\nprint(\"Raqamlar yigindisi: \", yigindi)",
+        "detail": "3-oy.1-dars.uy_ishi.2",
+        "documentation": {}
+    },
+    {
+        "label": "birlik",
+        "kind": 5,
+        "importPath": "3-oy.1-dars.uy_ishi.2",
+        "description": "3-oy.1-dars.uy_ishi.2",
+        "peekOfCode": "birlik = son % 10\nyigindi = yuzlik + onlik + birlik\nprint(\"Raqamlar yigindisi: \", yigindi)",
+        "detail": "3-oy.1-dars.uy_ishi.2",
+        "documentation": {}
+    },
+    {
+        "label": "yigindi",
+        "kind": 5,
+        "importPath": "3-oy.1-dars.uy_ishi.2",
+        "description": "3-oy.1-dars.uy_ishi.2",
+        "peekOfCode": "yigindi = yuzlik + onlik + birlik\nprint(\"Raqamlar yigindisi: \", yigindi)",
+        "detail": "3-oy.1-dars.uy_ishi.2",
+        "documentation": {}
+    },
+    {
+        "label": "soch",
+        "kind": 5,
+        "importPath": "3-oy.1-dars.uy_ishi.3",
+        "description": "3-oy.1-dars.uy_ishi.3",
+        "peekOfCode": "soch = 25000\nsoqol = 10000\nprint(\"Soch olasizmi? \\n1. Ha \\n0. Yoq\")\nsoch_tanlov = int(input())\nprint(\"Soqol olasizmi? \\n1. Ha \\n0. Yoq\")\nsoqol_tanlov = int(input())\njami = (soch * soch_tanlov) + (soqol * soqol_tanlov)\nprint(f\"Jami tolov: {jami} som\")",
+        "detail": "3-oy.1-dars.uy_ishi.3",
+        "documentation": {}
+    },
+    {
+        "label": "soqol",
+        "kind": 5,
+        "importPath": "3-oy.1-dars.uy_ishi.3",
+        "description": "3-oy.1-dars.uy_ishi.3",
+        "peekOfCode": "soqol = 10000\nprint(\"Soch olasizmi? \\n1. Ha \\n0. Yoq\")\nsoch_tanlov = int(input())\nprint(\"Soqol olasizmi? \\n1. Ha \\n0. Yoq\")\nsoqol_tanlov = int(input())\njami = (soch * soch_tanlov) + (soqol * soqol_tanlov)\nprint(f\"Jami tolov: {jami} som\")",
+        "detail": "3-oy.1-dars.uy_ishi.3",
+        "documentation": {}
+    },
+    {
+        "label": "soch_tanlov",
+        "kind": 5,
+        "importPath": "3-oy.1-dars.uy_ishi.3",
+        "description": "3-oy.1-dars.uy_ishi.3",
+        "peekOfCode": "soch_tanlov = int(input())\nprint(\"Soqol olasizmi? \\n1. Ha \\n0. Yoq\")\nsoqol_tanlov = int(input())\njami = (soch * soch_tanlov) + (soqol * soqol_tanlov)\nprint(f\"Jami tolov: {jami} som\")",
+        "detail": "3-oy.1-dars.uy_ishi.3",
+        "documentation": {}
+    },
+    {
+        "label": "soqol_tanlov",
+        "kind": 5,
+        "importPath": "3-oy.1-dars.uy_ishi.3",
+        "description": "3-oy.1-dars.uy_ishi.3",
+        "peekOfCode": "soqol_tanlov = int(input())\njami = (soch * soch_tanlov) + (soqol * soqol_tanlov)\nprint(f\"Jami tolov: {jami} som\")",
+        "detail": "3-oy.1-dars.uy_ishi.3",
+        "documentation": {}
+    },
+    {
+        "label": "jami",
+        "kind": 5,
+        "importPath": "3-oy.1-dars.uy_ishi.3",
+        "description": "3-oy.1-dars.uy_ishi.3",
+        "peekOfCode": "jami = (soch * soch_tanlov) + (soqol * soqol_tanlov)\nprint(f\"Jami tolov: {jami} som\")",
+        "detail": "3-oy.1-dars.uy_ishi.3",
+        "documentation": {}
+    },
+    {
+        "label": "ism",
+        "kind": 5,
+        "importPath": "3-oy.1-dars.uy_ishi.4",
+        "description": "3-oy.1-dars.uy_ishi.4",
+        "peekOfCode": "ism = input(\"Ismingizni kiriting: \")\nism1 = ism.lower()\nprint(f\"@{ism1}\")",
+        "detail": "3-oy.1-dars.uy_ishi.4",
+        "documentation": {}
+    },
+    {
+        "label": "ism1",
+        "kind": 5,
+        "importPath": "3-oy.1-dars.uy_ishi.4",
+        "description": "3-oy.1-dars.uy_ishi.4",
+        "peekOfCode": "ism1 = ism.lower()\nprint(f\"@{ism1}\")",
+        "detail": "3-oy.1-dars.uy_ishi.4",
+        "documentation": {}
+    },
+    {
+        "label": "chipta",
+        "kind": 5,
+        "importPath": "3-oy.1-dars.uy_ishi.5",
+        "description": "3-oy.1-dars.uy_ishi.5",
+        "peekOfCode": "chipta = 40_000\nodam = int(input(\"Odam sonini kiriting: \"))\njami = odam * chipta\nprint(f\"Jami tolov: {jami} som\\nHar bir kishi: {chipta} som\")",
+        "detail": "3-oy.1-dars.uy_ishi.5",
+        "documentation": {}
+    },
+    {
+        "label": "odam",
+        "kind": 5,
+        "importPath": "3-oy.1-dars.uy_ishi.5",
+        "description": "3-oy.1-dars.uy_ishi.5",
+        "peekOfCode": "odam = int(input(\"Odam sonini kiriting: \"))\njami = odam * chipta\nprint(f\"Jami tolov: {jami} som\\nHar bir kishi: {chipta} som\")",
+        "detail": "3-oy.1-dars.uy_ishi.5",
+        "documentation": {}
+    },
+    {
+        "label": "jami",
+        "kind": 5,
+        "importPath": "3-oy.1-dars.uy_ishi.5",
+        "description": "3-oy.1-dars.uy_ishi.5",
+        "peekOfCode": "jami = odam * chipta\nprint(f\"Jami tolov: {jami} som\\nHar bir kishi: {chipta} som\")",
+        "detail": "3-oy.1-dars.uy_ishi.5",
+        "documentation": {}
+    },
+    {
+        "label": "ism_familiya",
+        "kind": 5,
+        "importPath": "3-oy.1-dars.uy_ishi.6",
+        "description": "3-oy.1-dars.uy_ishi.6",
+        "peekOfCode": "ism_familiya = str(input(\"Ism famiyani kiriting: \"))\nboshi = ism_familiya[0]\noxiri = ism_familiya[-1]\nprint(f\"Birinchi harf: {boshi}\\nOxirgi harf: {oxiri}\")",
+        "detail": "3-oy.1-dars.uy_ishi.6",
+        "documentation": {}
+    },
+    {
+        "label": "boshi",
+        "kind": 5,
+        "importPath": "3-oy.1-dars.uy_ishi.6",
+        "description": "3-oy.1-dars.uy_ishi.6",
+        "peekOfCode": "boshi = ism_familiya[0]\noxiri = ism_familiya[-1]\nprint(f\"Birinchi harf: {boshi}\\nOxirgi harf: {oxiri}\")",
+        "detail": "3-oy.1-dars.uy_ishi.6",
+        "documentation": {}
+    },
+    {
+        "label": "oxiri",
+        "kind": 5,
+        "importPath": "3-oy.1-dars.uy_ishi.6",
+        "description": "3-oy.1-dars.uy_ishi.6",
+        "peekOfCode": "oxiri = ism_familiya[-1]\nprint(f\"Birinchi harf: {boshi}\\nOxirgi harf: {oxiri}\")",
+        "detail": "3-oy.1-dars.uy_ishi.6",
+        "documentation": {}
+    },
+    {
+        "label": "ism",
+        "kind": 5,
+        "importPath": "3-oy.1-dars.uy_ishi.7",
+        "description": "3-oy.1-dars.uy_ishi.7",
+        "peekOfCode": "ism = str(input(\"Ismingizni kiriting: \"))\nboshi = ism[:2]\noxiri = ism[-2:]\nnatija = (boshi + oxiri) * 3\nprint(natija)",
+        "detail": "3-oy.1-dars.uy_ishi.7",
+        "documentation": {}
+    },
+    {
+        "label": "boshi",
+        "kind": 5,
+        "importPath": "3-oy.1-dars.uy_ishi.7",
+        "description": "3-oy.1-dars.uy_ishi.7",
+        "peekOfCode": "boshi = ism[:2]\noxiri = ism[-2:]\nnatija = (boshi + oxiri) * 3\nprint(natija)",
+        "detail": "3-oy.1-dars.uy_ishi.7",
+        "documentation": {}
+    },
+    {
+        "label": "oxiri",
+        "kind": 5,
+        "importPath": "3-oy.1-dars.uy_ishi.7",
+        "description": "3-oy.1-dars.uy_ishi.7",
+        "peekOfCode": "oxiri = ism[-2:]\nnatija = (boshi + oxiri) * 3\nprint(natija)",
+        "detail": "3-oy.1-dars.uy_ishi.7",
+        "documentation": {}
+    },
+    {
+        "label": "natija",
+        "kind": 5,
+        "importPath": "3-oy.1-dars.uy_ishi.7",
+        "description": "3-oy.1-dars.uy_ishi.7",
+        "peekOfCode": "natija = (boshi + oxiri) * 3\nprint(natija)",
+        "detail": "3-oy.1-dars.uy_ishi.7",
+        "documentation": {}
+    },
+    {
+        "label": "sms",
+        "kind": 5,
+        "importPath": "3-oy.1-dars.uy_ishi.9",
+        "description": "3-oy.1-dars.uy_ishi.9",
+        "peekOfCode": "sms = str(input(\"SMS uzunligini kiriting: \"))\nuzunlik = len(sms)\nprint(f\"SMS uzunligi: {uzunlik} ta belgi\")",
+        "detail": "3-oy.1-dars.uy_ishi.9",
+        "documentation": {}
+    },
+    {
+        "label": "uzunlik",
+        "kind": 5,
+        "importPath": "3-oy.1-dars.uy_ishi.9",
+        "description": "3-oy.1-dars.uy_ishi.9",
+        "peekOfCode": "uzunlik = len(sms)\nprint(f\"SMS uzunligi: {uzunlik} ta belgi\")",
+        "detail": "3-oy.1-dars.uy_ishi.9",
+        "documentation": {}
+    },
+    {
+        "label": "harf",
+        "kind": 5,
+        "importPath": "3-oy.2-dars.sinf_ishi.1",
+        "description": "3-oy.2-dars.sinf_ishi.1",
+        "peekOfCode": "harf = input(\"Harfni kiriting: \")\nn = int(input(\"n butun sonni kiriting: \"))\nif not harf.isalpha():\n    print(\"Bunday harf yo'q\")\nelse:\n    start = (ord(\"A\") if harf.isupper() else ord(\"a\"))  # Harfning alifbodagi o'rnini aniqlaymiz (0-25 oraliqda)\n    yangi_o_rin = (ord(harf) - start + n) % 26  # Yangi harfning o'rnini hisoblaymiz (modul 26 alifbo aylanishi uchun)\n    print(chr(start + yangi_o_rin))  # Yangi harfni chiqaramiz",
+        "detail": "3-oy.2-dars.sinf_ishi.1",
+        "documentation": {}
+    },
+    {
+        "label": "n",
+        "kind": 5,
+        "importPath": "3-oy.2-dars.sinf_ishi.1",
+        "description": "3-oy.2-dars.sinf_ishi.1",
+        "peekOfCode": "n = int(input(\"n butun sonni kiriting: \"))\nif not harf.isalpha():\n    print(\"Bunday harf yo'q\")\nelse:\n    start = (ord(\"A\") if harf.isupper() else ord(\"a\"))  # Harfning alifbodagi o'rnini aniqlaymiz (0-25 oraliqda)\n    yangi_o_rin = (ord(harf) - start + n) % 26  # Yangi harfning o'rnini hisoblaymiz (modul 26 alifbo aylanishi uchun)\n    print(chr(start + yangi_o_rin))  # Yangi harfni chiqaramiz",
+        "detail": "3-oy.2-dars.sinf_ishi.1",
+        "documentation": {}
+    }
+]
