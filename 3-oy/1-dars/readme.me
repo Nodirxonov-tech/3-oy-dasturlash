@@ -1,0 +1,41 @@
+1.git init - Loyiha yaratish uchun birinchi qadam. 
+2.git status
+    qizil - saqlash uchun hali ro'yxatga qo'shilmagan
+    yashil 
+    yashil - saqlash uchun hali ro'yxatga qo'shilganlari
+3.Saqlash uchun hali ro'yxatga qo'shadi
+    git add papka_nomi - papkani
+    git add fayl_nomi - faylni
+    git add . - hammasini ro'yxatga qo'shish
+4.git commit -m "Qo'shilgan funksiya" - salqaydi
+ord() - harfni ASCII kod deb ataladigan songa aytiladi.
+f"{matn}{yigindi}": Bu usul (f-string) so'z va sonni bir-biriga chiroyli qilib yopishtirib beradi.
+id_raqam[:2] — "Nolinchi indeksdan boshla va ikkinchi indeksgacha (ikkinchi kirmaydi) qirqib ol" degani.
+random.randint(97, 122): Kompyuter 97 va 122 orasida bitta son o'ylaydi.
+chr(): Bu funksiya ord() ning teskarisi. U sonni harfga aylantirib beradi.
+ism1 =ism.lower() - .lower() metodi: Bu metod matndagi barcha katta harflarni kichik harfga aylantiradi. Masalan, "Oybek" $\rightarrow$ "oybek" bo'ladi.
+natija=kitob_nomi.title() - .title(): Siz qo'llagan bu metod "python dasturlash"ni "Python Dasturlash" ko'rinishiga keltirdi.
+print(natija.center(30)) - .center(30): Bu metod matnni o'rtaga qo'yadi. Agar matn 17 ta belgidan iborat bo'lsa, u jami 30 ta joy ochadi va matnni o'rtaga qo'yib, qolgan 13 ta joyni (6 tasi chapga, 7 tasi o'ngga) bo'shliq (probel) bilan to'ldiradi.
+clean_phone = phone.replace("+", "") - replace(old, new): Bu metod matn ichidagi ma'lum bir belgini boshqasiga almashtiradi.
+Bizning holatda replace("-", "") buyrug'i: "hamma chiziqchalarni top va ularni o'chirib tashla (bo'shliq bilan almashtir)" degan ma'noni anglatadi.
+
+.isalpha() (Alphabetic):
+
+Agar matn faqat harflardan iborat bo'lsa (probel va raqamlarsiz), True beradi.
+
+Misol: "Python" -> True, "Python123" -> False.
+
+.isdigit() (Digit):
+
+Agar matn faqat raqamlardan iborat bo'lsa, True beradi.
+
+Misol: "12345" -> True, "Python123" -> False.
+
+.isalnum() (Alphanumeric):
+
+Agar matn harf yoki raqamdan (yoki ikkalasidan) iborat bo'lsa, True beradi.
+
+Muhim: Agar matnda belgi ( @, #, ! ) yoki probel bo'lsa, bu metod False qaytaradi.
+
+Misol: "Python123" -> True, "Python 123" -> False (probel borligi uchun).
+

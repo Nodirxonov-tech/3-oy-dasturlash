@@ -1,0 +1,597 @@
+1/C va Python (if)
+
+
+1.Syntax (Sintaksis)
+
+C tilida:
+
+if (x > 10) {
+    printf("X 10 dan katta");
+} else {
+    printf("X 10 dan kichik yoki teng");
+}
+
+
+Python tilida:
+
+if x > 10:
+    print("X 10 dan katta")
+    print("X 10 dan katta")
+else:
+    print("X 10 dan kichik yoki teng")
+
+
+Farqi:
+
+1: Python’da qavs "{}" ishlatilmaydi, balki indentatsiya (bo‘sh joy) ishlatiladi.
+2: Har bir "if", "elif", "else" so‘zidan keyin ":" qo‘yiladi.
+
+2. Shart qiymatlari (Condition)
+
+C tilida:
+
+1: "if" shart 0 yoki 0 bo‘lmagan qiymatga qarab ishlaydi
+
+int a = 5;
+if(a) {
+    // a 0 dan farq qilsa ishlaydi
+}
+
+
+Python tilida:
+
+1: "if" shart "True" yoki "False" bo‘lishi kerak (ammo Python avtomatik ravishda quyidagilarni False deb qabul qiladi: 0, 0.0, "" (bo‘sh string), "[]", "{}", None).
+
+a = 5
+if a:  # a 0 dan farq qilsa True
+    print("True")
+
+
+3. "else if" vs "elif"
+
+C tilida:
+
+if (x > 10) {
+    printf("x>10");
+} else if (x > 5) {
+    printf("x>5");
+} else {
+    printf("x<=5");
+}
+
+
+Python tilida:
+
+if x > 10:
+    print("x>10")    
+elif x > 5:
+    print("x>5")
+else:
+    print("x<=5")
+
+
+Farqi: 
+
+1: Python’da "else if" mavjud emas, uning o‘rniga "elif" ishlatiladi.
+
+
+4. Multiple conditions (Ko'p sharhlar)
+
+C tilida:
+
+if (x > 5 && x < 10) {
+    printf("5 < x < 10");
+}
+
+
+Python tilida: 
+
+if x > 5 and x < 10:
+    print("5 < x < 10")
+
+
+Farqi:
+
+1: Python’da "&&" → "and", "||" → "or", "!" → "not" deb yoziladi.
+
+
+5. Ternary operator (Shartli if)
+
+C tilida:
+
+int max = (a > b) ? a : b;
+
+
+Python tilida:
+
+max = a if a > b else b
+
+
+Farqi:
+
+1: Python’da "a if condition else b' shaklida yoziladi.
+
+
+6. Boolean qiymatlarni tekshirish.
+
+C tilida:
+
+if (x) { ... } // 0 bo'lmasa True
+
+
+Python tilida:
+
+if x:  # 0, None, "", [], {} False qabul qilinadi
+    ...
+
+
+
+Xulosa: 
+
+1: Python if bo‘sh joy (indentatsiya) bilan ishlaydi, C {} bilan.
+
+2: Python shartlar True/False bo‘lishi kerak, C 0 yoki 0 bo‘lmagan.
+
+3: Python else if emas, elif ishlatiladi.
+
+4: Mantiqiy operatorlar Python’da and/or/not, C’da &&/||/!.
+
+5: Ternary Python’da a if cond else b shaklida.
+
+
+
+
+2/ Shartli operatorlar (if, elif, else)
+
+
+// Shartli operatorlar tushunchasi
+
+1: Shartli operatorlar dasturdagi harakatlar ketma-ketligini belgilashda muhim rol o'ynaydi.
+Ular dasturda ma'lum shartlar bajarilganda ma'lum kod bloklarini bajarishga imkon beradi.
+Dasturchi shartli operatorlardan foydalanib, dastur qanday ish qilishini boshqaradi.
+
+2: Shartli operatorlar dasturlashda qarorlar qabul qilishda asosiy vosita hisoblanadi.
+
+
+
+ `if`, `elif`, va `else` operatorlari
+
+ `if` operatori
+
+`if` operatori shart to'g'ri bo'lsa, kodning ma'lum bir qismini bajaradi.
+
+python
+
+age = 18
+if age >= 18:
+    print("Siz voyaga yetgansiz.")
+
+
+`elif` operatori
+
+Agar birinchi shart noto'g'ri bo'lsa, `elif` operatori yordamida boshqa shartlarni tekshirish mumkin.
+
+python
+
+age = 16
+if age >= 18:
+    print("Siz voyaga yetgansiz.")
+elif age >= 13:
+    print("Siz o'smir bolasi.")
+
+
+ `else` operatori
+
+Agar barcha shartlar noto'g'ri bo'lsa, `else` operatori yordamida muayyan kod bajariladi.
+
+python
+
+age = 10
+if age >= 18:
+    print("Siz voyaga yetgansiz.")
+elif age >= 13:
+    print("Siz o'smir bolasi.")
+else:
+    print("Siz bolasan.")
+
+
+
+Amaliy misollar
+
+Misol 1: Ball asosida baholash
+
+python
+
+score = 85
+
+if score >= 90:
+    print("A")
+elif score >= 80:
+    print("B")
+elif score >= 70:
+    print("C")
+else:
+    print("D")
+
+
+ Misol 2: Foydalanuvchi kirishi bo'yicha ma'lumot berish
+
+python
+
+user_input = input("Iltimos, yilingizni kiriting: ")
+age = int(user_input)
+
+if age >= 18:
+    print("Siz mustaqil kishi!")
+elif age >= 13:
+    print("Siz o'smir bolasi.")
+else:
+    print("Siz bolasan.")
+
+
+
+
+ Tushunarsiz joylarga izohlar
+
+- Shart: Dasturda tekshiriladigan ifoda yoki holat.
+- Operator: Dasturlash tilidagi ma'lum vazifalarni bajaruvchi belgilar yoki kalit so'zlar
+(masalan, `if`, `else`).
+- Blok: Kodning bir qismi, odatda, biror shart bajarilganda bajariladi.
+
+
+
+Xulosa
+
+Bu qismda biz shartli operatorlar (`if`, `elif`, `else`) ning qanday ishlashini o'rdik va
+ turli misollar orqali ularning qo'llanilishini ko'rdik. Shartli operatorlar dasturda qaror 
+qabul qilishda juda muhim.
+
+
+/3. C va Python (for/while)
+
+ 1️⃣ `for` sikli
+
+C tilida
+
+
+for (int i = 0; i < 5; i++) {
+    printf("%d\n", i);
+}
+
+
+
+Tushuntirish:
+
+- for` C da **3 qismdan iborat:** boshlang‘ich qiymat; shart; increment/decrement (`i++`).
+- Sintaksis qat’iy: `for(initialization; condition; update)`.
+
+Python tilida
+
+
+for i in range(5):
+    print(i)
+    
+
+
+
+Tushuntirish:
+
+- Python `for` iteratsiya qiluvchi obyekt ustida ishlaydi (`range()`, ro‘yxat, string, va h.k.).
+- Sintaksis: `for variable in iterable:`
+- `i` avtomatik `range` qiymatlari bo‘yicha o‘zgaradi, **increment ko‘rsatilmaydi**.
+
+Farqlar
+
+| C         |        Python |
+
+| `for` 3 qismli (start; condition; step)       |       `for` iterable ustida ishlaydi |
+
+| `{}` bilan blok       |       Indentatsiya bilan blok |
+| O‘zgaruvchi odatda oldindan e’lon qilinadi      |      O‘zgaruvchi avtomatik yaratiladi |
+
+
+
+2️⃣ `while` sikli
+
+C tilida
+
+
+int i = 0;
+while (i < 5) {
+    printf("%d\n", i);
+    i++;
+}
+
+
+
+Python tilida
+
+
+i = 0
+while i < 5:
+    print(i)
+    i += 1
+
+
+Farqlar:
+
+- Sintaksis: Python da `:` va **indentatsiya** kerak.
+- C da `{}` bilan blok, Python da indentatsiya bilan.
+- Shartlar tekshirilganda, Python-da `True/False` qiymat bo‘lishi kerak, C da 0 yoki 0 bo‘lmagan qiymat.
+
+
+
+3️⃣ `for` misoli: 1 dan N gacha yig‘indi
+
+C:
+
+
+int sum = 0;
+for(int i = 1; i <= 10; i++) {
+    sum += i;
+}
+
+
+
+Python:
+
+
+sum = 0
+for i in range(1, 11):
+    sum += i
+
+
+
+Farq: Python `range(1, 11)` oxirgi sonni **kiritmaydi**, C `i <= 10` oxirgi sonni **kiritadi.
+
+
+4️⃣ `while` misoli: foydalanuvchi 0 kiritgunga qadar
+
+C:
+
+
+int x;
+scanf("%d", &x);
+while(x != 0) {
+    printf("%d\n", x);
+    scanf("%d", &x);
+}
+
+
+Python:
+
+
+x = int(input())
+while x != 0:
+    print(x)
+    x = int(input())
+
+
+
+Farq:
+
+- Python `input()` string qaytaradi, C da `scanf` son.
+- Python-da **type conversion** kerak (`int()`).
+
+
+
+5️⃣ Qo‘shimcha farqlar
+
+1. `for-else` va `while-else` Python:
+    - Python da sikl normal tugasa, `else` ishlaydi. C da bunday yo‘q.
+
+
+for i in range(5):
+    print(i)
+else:
+    print("Sikl tugadi")
+
+
+
+1. Iterator va generatorlar:
+    - Python `for` har qanday iterable bilan ishlaydi: string, tuple, dictionary.
+    - C da `for` faqat sonlar orqali siklni boshqaradi yoki qo‘lda pointer bilan.
+
+
+
+
+/4. Loop operatorlari (while, for)
+
+
+ Loop operatorlarining tushunchasi
+
+Loop operatorlari dasturda biror kod blokini bir necha bor takrorlash imkonini beradi. Ular dasturimizni samarali va qulay qilishda muhim rol o'ynaydi. Looplar orqali ma'lum shartlar bajarilganda kodni takrorlash yoki ma'lum bir elementlar to'plamini ko'rib chiqish mumkin.
+
+Dasturlashda loop operatorlari orqali kodni takrorlash, odatda, o'zgarmas ko'p marta bajariladigan vazifalar uchun juda foydalidir.
+
+
+
+`while` loop
+
+`while` loop shart to'g'ri bo'lsa, kodni takrorlaydi. Bu, shart bajarilsa, loop davom etadi va shart noto'g'ri bo'lganda to'xtaydi.
+
+Sintaksis:
+
+
+while shart:
+    # Takrorlanadigan kod bloki
+
+
+ Misol:
+
+
+count = 0
+while count < 5:
+    print("Hozirgi hisob:", count)
+
+
+Bu misolda, `count` o'zgaruvchisi 0 dan boshlanadi va 5 dan kichik bo'lganida kod takrorlanadi.
+
+
+
+ `for` loop
+
+`for` loop, odatda, ro'yxat, to'plam yoki boshqa iterable obyektlardan elementlarni o'qish uchun ishlatiladi. Har bir element uchun bir marta kodni bajaradi.
+
+ Sintaksis:
+
+
+for element in iterable:
+    # Kod bloki
+
+
+Misol:
+
+
+names = ["Ali", "Vali", "Hasan"]
+for name in names:
+    print("Salom", name)
+
+
+Bu misolda, `names` ro'yxatidagi har bir ism uchun salom beriladi.
+
+
+
+ Amaliy misollar
+
+ Misol 1: 1 dan 10 gacha bo'lgan raqamlar yig'indisini hisoblash
+
+ `while` loop:
+
+python
+total = 0
+count = 1
+while count <= 10:
+    total += count
+    count += 1
+print("Yig'indi:", total)
+
+
+ `for` loop:
+
+
+total = 0
+for count in range(1, 11):
+    total += count
+print("Yig'indi:", total)
+
+
+ Misol 2: Foydalanuvchidan raqamlar qabul qilish
+
+ Tushunarsiz joylarga izohlar
+
+- Loop: Dasturda biror kod blokini bir necha marta bajarish imkonini beruvchi struktura.
+- Iterable: Takrorlanishi mumkin bo'lgan obyektlar, masalan, ro'yxatlar, to'plamlar va h.k.z.
+- Takrorlash: Kod blokining bir necha bor bajarilishi.
+
+
+
+ Xulosa
+
+Bu qismda biz loop operatorlari (`while` va `for`) ning qanday ishlashini o'rdik va turli misollar
+ orqali ularning qo'llanilishini ko'rdik. Loop operatorlari dasturda takrorlanadigan vazifalarni
+ bajarishda juda muhim.
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Python dasturlash tilida in va not operatorlari shartlarni tekshirish va mantiqiy
+xulosalar chiqarishda juda muhim rol o'ynaydi. Quyida ularning har biri qachon 
+va qanday qo'llanilishi bo'yicha batafsil ma'lumot berilgan:
+
+1. in operatori (A'zolik operatori)
+in operatori biror qiymat ma'lum bir to'plam (ro'yxat, satr, lug'at) ichida bor yoki yo'qligini tekshiradi.
+
+Qachon qo'llaniladi:
+
+Biror belgi satr (string) ichida mavjudligini aniqlashda. Masalan, unli harflarni tekshirishda belgi in unlilar ko'rinishida ishlatiladi.
+
+Ro'yxat (list) ichidan ma'lum bir elementni qidirishda.
+
+Natija: Agar qiymat mavjud bo'lsa True, aks holda False qaytaradi.
+
+
+2. not operatori (Inkor operatori)
+not — bu mantiqiy inkor operatori bo'lib, u True natijani (False) ga, (False) ni 
+esa (True) ga aylantiradi.
+
+Qachon qo'llaniladi:
+
+Shartning teskarisini tekshirish kerak bo'lganda. Masalan, belgi harf emasligini 
+tekshirishda not belgi.isalpha() ko'rinishida qo'llaniladi.
+
+Son ma'lum bir songa teng emasligini yoki bo'linmasligini tekshirishda 
+(masalan, toq sonlarni topishda not (son % 2 == 0) deb yozish mumkin).
+
+3. Birgalikda qo'llash: not in
+Ushbu ikki operatorni birlashtirib, biror narsa to'plam ichida yo'qligini 
+tekshirish mumkin.
+
+Misol: Foydalanuvchi taqiqlangan so'z kiritmaganini tekshirishda juda qo'l
+keladi.
+
+
+Xulosa
+
+in: "Ichida bormi?" degan savolga javob beradi.
+
+not: "Emasmi?" (teskari mantiq) degan ma'noni bildiradi.
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+4. Harflar bilan ishlash (Sezar uslubida)
+
+Bu masalada harfning tartib raqami (ord()) va tartib raqamdan harf yasash 
+(chr()) funksiyalaridan foydalaniladi.
+
+1. start = ord('A') if harf.isupper() else ord('a')
+
+Bu qatorda biz alifboning "nol nuqtasi"ni aniqlaymiz.
+
+Nega kerak? Kompyuter harflarni raqamlar 
+(ASCII kodlari) orqali taniyadi.
+Masalan, 'A' harfi 65, 'a' harfi esa 97 ga teng.
+
+Mantiq: Agar harf katta bo'lsa, biz 65 dan, kichik bo'lsa 97 dan hisoblashni 
+boshlaymiz. Bu natijaning registrini (katta-kichikligini) saqlab qolish uchun 
+kerak.
+
+2. (ord(harf) - start + n) % 26
+
+Bu yerda eng muhim matematik amallar bajariladi:
+(ord(harf) - start): Harfning ASCII kodini alifbodagi tartib raqamiga 
+(0 dan 25 gacha) aylantiradi.
+
+Misol: 'C' harfi bo'lsa: $67 - 65 = 2$. Ya'ni 'C' alifboning 2-indeksidagi harf 
+(0-A, 1-B, 2-C).
+
++ n: Foydalanuvchi kiritgan qadam sonini qo'shamiz.
+
+Misol: 'C' va n=2 bo'lsa: 2 + 2 = 4.
+
+% 26 (Qoldiqli bo'lish): Bu "aylanish" qismi. Alifboda 26 ta harf bor.
+
+Agar biz 'Z' harfida bo'lsak (25) va n=2 ni qo'shsak, natija 27 bo'ladi.
+
+27 / 26 amali bajarilganda qoldiq 1 chiqadi. 1-indeks esa 'B' harfidir. Shunda harf yana 
+boshidan aylanib keladi.
+
+3. Misol tahlili: z harfi va n = 2
+
+harf = 'z' (ASCII kodi 122).
+start = ord('a') (97).
+Indeksni topamiz: 122 - 97 = 25 (alifboning oxiri).
+Qadam qo'shamiz: 25 + 2 = 27.
+Aylantiramiz: 27 % 26 = 1.
+chr(97 + 1) = chr(98) = 'b'.
+Natija: z harfidan 2 ta keyingi harf b bo'ladi.
+
+Xulosa:
+
+ord(): Harfni songa aylantiradi.
+
+chr(): Sonni harfga aylantiradi.
+% 26: Chegaradan chiqib ketmaslikni va alifbo doirasida aylanishni ta'minlaydi
+
+.Bu formula orqali siz istalgancha katta son (masalan, n=1000) kiritilsa ham,
+xatosiz harfni topa olasiz.
