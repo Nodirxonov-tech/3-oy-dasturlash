@@ -1,5 +1,3 @@
-from 3-oy.1-dars.uy_ishi.15 import A
-
 #### For va while masalalari.
 
 ## Oson masalalar.
@@ -169,21 +167,3 @@ from 3-oy.1-dars.uy_ishi.15 import A
 #     count+=1  # Har bir raqam ochirilganda biz, bitta  xona sanaymiz.
 
 # print(count, "xonali")  # kiritilgan son nechi xona ekanligini ekaranga chiqaramiz.
-
-
-
-### Qiyin masalalar.
-
-# # 1-masala. Fibonachiga doir masala.
-
-# n=int(input("sonni kiriting: "))  
-# a=0  
-# b=1   # a = 0, b = 1: Ketma-ketlikni boshlab beruvchi asosiy sonlar.
-# for i in range(n):  # Sikl n gacha aylanadi.
-#     print(a, end=" ")    # print(a): Biz har doim a (birinchi turgan) sonni chiqaramiz.
-    
-#     temp=a+b   # Yangi son (temp) har doim a + b ga teng bo'ladi.
-#     a=b
-#     b=temp   # Keyingi qadamga o'tishda a ning o'rniga b ni, b ning o'rniga esa yangi chiqqan temp ni qo'yamiz.
-
-

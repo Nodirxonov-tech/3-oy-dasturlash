@@ -1,0 +1,105 @@
+# ## Qiyin masalalar.
+
+# # 1-masala. Fibonachiga doir masala.
+
+# n=int(input("sonni kiriting: "))
+# a=0
+# b=1   # a = 0, b = 1: Ketma-ketlikni boshlab beruvchi asosiy sonlar.
+# for i in range(n):  # Sikl n gacha aylanadi.
+#     print(a, end=" ")    # print(a): Biz har doim a (birinchi turgan) sonni chiqaramiz.
+
+#     temp=a+b   # Yangi son (temp) har doim a + b ga teng bo'ladi.
+#     a=b
+#     b=temp   # Keyingi qadamga o'tishda a ning o'rniga b ni, b ning o'rniga esa yangi chiqqan temp ni qo'yamiz.
+
+
+# # 2-masala.
+
+# n = int(input("N ni kiriting: ")) # Boshlanish nuqtasi
+# m = int(input("M ni kiriting: ")) # tugash nuqtasi
+# k = int(input("K ni kiriting: "))  # chegara
+# a = 0   # birinchi fibanachi son
+# b = 1   # ikkinchi fibanachi son
+# count = 0   # sanoq uchun ozgaruvchi
+# while a<=m:     # shart berib olamiz. ekranga chiqarmoqchi bolgan fibanachi sonlarimiz 0dan boshlab emas n va m oraligida bolishi kerak . masala shartida shunday berlilgan. yani a sonimiz mdan yani oxirgi nuqtadan kichikmi shart qanoatlantirsa sikl aylanadi aks holda chiqib ketadi.
+#     if a>=n:      # Yana shunaqa shart oxirgi nuqtadan kichik bolganda sikl aylanishni boshlaydi va ichiga kiradi ichiga kirganda if shartiga mosmi tekshiradi. if sharti quyidagicha: masala shartida n va m sonlari oraligida deyilganligi uchun m dan pastligini aniqladik endi a dan katta bolsa:
+#         print(a, end=" ")  # ekranga a ni chiqar va
+#         count += 1  # count sanoqga 1 ni qosh deb qoyamiz.
+
+#     if count==k: # Va yana tekshiriladigan narsa chegara yani k. bizga n va m sonlar orasidagi k ta fibanachi sonlari kerak. shuning uchun k ta fibanachi sonlarimizni olishimiz kerak va olib bolganimizdan keyin sikldan chiqib ketishimiz kerak.
+#         break
+
+#     temp=a+b  # fibanachi sonlarimiz almashib boraveradi.
+#     a=b
+#     b=temp
+
+
+# # 3-masala.
+
+# son=input("Butun sonni kiriting: ")  # foydalanuvchi sitring korinishida son kiritadi
+# bormi=False  # Bayroqcha (flag) ozgaruvchi holatini saqlash uchun.
+
+# for i in range(len(son)-1):  # sikl kiritilgan son uzunligini aniqlab olamiz va sikl sonning uzunligidan 1tandan ayrib ketadigan qilamiz va son 0 bolganida sikl toxtaydi agar yoq bolsa va bayroqchamiz False boladi.
+#     if son[i]==son[i+1]:   # shart beramiz sikl sonning 1-indeksini beradi yani 0-sini va har safar aylanganida sikl bergan i (indeks) keyingi soniga solishtirish uchun (+1) tengligini tekshiramiz .
+#         bormi=True   # Agar bor bolsa true boladi.
+#         break # va sikldan chiqib ketamiz.
+
+# if bormi:   # bu shart da True and false ligini tekshiramiz.
+#     print("Bor")  # agar bor bolsa ekranga bor chiqadi
+# else:  # aks holda
+#     print("Yoq")  # Yoq chiqadi.
+
+# # 4-masala.
+
+# n=int(input("N ni kiriting: "))
+
+# for i in range(1, n+1):
+#     if n % i == 0:
+#         if i%2!=0:
+#             print(i, end=" ")
+
+# # 5-masala.
+
+# n=int(input("N ni kiriting: "))
+# yigindi=0
+
+# for i in range(1,n):
+#     if n%i==0:
+#         yigindi+=i
+# print(yigindi)
+
+# # 6-masala.
+
+# n = int(input("Kvadrat tomonini kiriting: "))
+
+# for i in range(n):
+#     for j in range(n):
+#         # Shartlarni tekshiramiz:
+#         # i == 0 (birinchi qator)
+#         # i == n-1 (oxirgi qator)
+#         # j == 0 (birinchi ustun)
+#         # j == n-1 (oxirgi ustun)
+#         # i + j >= n - 1 (yordamchi diagonal va uning pastki qismi)
+#         if i == 0 or i == n - 1 or j == 0 or j == n - 1 or (i + j >= n - 1):
+#             print("*", end=" ")
+#         else:
+#             print(" ", end=" ")  # Bo'sh joylar uchun
+#     print()  # Keyingi qatorga o'tish
+
+# 7-masala.
+
+# n = int(input("Kvadrat tomonini kiriting: "))
+
+# for i in range(n):
+#     for j in range(n):
+#         # Shartlarni tekshiramiz:
+#         # i == 0 (birinchi qator)
+#         # i == n-1 (oxirgi qator)
+#         # j == 0 (birinchi ustun)
+#         # j == n-1 (oxirgi ustun)
+#         # i + j >= n - 1 (yordamchi diagonal va uning pastki qismi)
+#         if i == 0 or i == n - 1 or j == 0 or j == n - 1 or (i + j <= n - 1):
+#             print("*", end=" ")
+#         else:
+#             print(" ", end=" ")  # Bo'sh joylar uchun
+#     print()  # Keyingi qatorga o'tish

@@ -700,3 +700,69 @@ sonlar kattalashgani sari 1.618 (Oltin kesim) soniga yaqinlashib boradi.
 
 Dasturlashda: Siz kabi o'rganuvchilar uchun bu tushuncha sikllar 
 (for, while) va rekursiya mavzularini tushunish uchun eng klassik misol hisoblanadi.
+
+
+////// Faktorial //////
+
+Faktorial — bu 1 dan boshlab berilgan $n$ sonigacha bo'lgan barcha natural sonlarning ko'paytmasidir. 
+Matematikada u sonning yoniga undov belgisi qo'yilgan holda ifodalanadi: n!.
+Masalan, 5 faktorialni hisoblash uchun 1 dan 5 gacha bo'lgan barcha sonlarni ko'paytiramiz:
+
+                            5! = 1 * 2 * 3 * 4 * 5 = 120
+ 
+Asosiy qoidalar:
+0! = 1 (Matematik kelishuvga ko'ra nolning faktoriali har doim birga teng).
+1! = 1
+Faktorial faqat manfiy bo'lmagan butun sonlar uchun ishlatiladi.
+
+Nima uchun faktorial kerak?
+
+Faktorial asosan kombinatorika (narsalarni necha xil usulda joylashtirish mumkinligini hisoblash), 
+ehtimollar nazariyasi va matematik analizda keng qo'llaniladi. Masalan, 3 ta kitobni javonga necha xil 
+tartibda taxlash mumkinligini bilmoqchi bo'lsangiz, 3! = 6 xil usul borligini topasiz.
+
+
+
+
+/////// Happy number //////
+
+
+
+Happy Number (Baxtli son) — bu matematikada o'ziga xos qiziqarli xususiyatga ega bo'lgan son 
+hisoblanadi. Uni aniqlash uchun quyidagi tartibda amallar bajariladi:
+
+1. Aniqlash tartibi
+Berilgan sonning har bir raqami kvadratga oshiriladi va o'zaro qo'shiladi.
+
+Hosil bo'lgan yangi son bilan ham aynan shu amal takrorlanadi.
+
+Agar bu jarayon oxirida 1 raqamiga yetib kelsa, demak bu son Happy Number hisoblanadi.
+
+Agar jarayon cheksiz davom etsa yoki 4 raqami ishtirok etgan siklga tushib qolsa, bu son 
+Unhappy Number (Baxtsiz son) deyiladi.
+
+
+2. Misol orqali tahlil
+N = 19 sonini olaylik:
+1^2 + 9^2 = 1 + 81 = 82
+8^2 + 2^2 = 64 + 4 = 68
+6^2 + 8^2 = 36 + 64 = 100
+1^2 + 0^2 + 0^2 = 1 + 0 + 0 = 1
+Natija 1 bo'lgani uchun 19 — "baxtli" son.
+
+
+3. Sikl (Unhappy Number) holati
+Ba'zi sonlar (masalan, 2) hech qachon 1 ga yetib bormaydi:
+$
+2 = 2^2 = 4
+4 = 4^2 = 16
+16 = 1^2 + 6^2 = 37
+37 = 3^2 + 7^2 = 58
+...bu ketma-ketlik ma'lum vaqtdan keyin yana 4 ga qaytib keladi va cheksiz davom etadi. 
+Shuning uchun bunday sonlar Happy Number emas.
+
+4. Dasturlashda yechimi
+
+Buni tekshirish uchun Python-da while tsiklidan foydalaniladi.
+Tsikl son 1 ga yoki 4 ga teng bo'lguncha davom etishi kerak. Agar oxirida
+n == 1 bo'lsa, dastur True qaytaradi.

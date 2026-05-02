@@ -1,0 +1,7 @@
+n=int(input("Sonni kiriting: "))
+teskari_son=0
+while n > 0:
+    qoldiq=n%10
+    teskari_son=(teskari_son*10)+qoldiq
+    n=n//10
+print(teskari_son)
