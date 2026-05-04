@@ -1,0 +1,191 @@
+////////////////  3-dars   //////////////////////
+
+/// Non-privmitive typelar (Tuple va List).  ///
+
+
+
+  Dars maqsadlari 
+
+  - Tuple
+    - e’lon qilish, kesish
+    - `index` va `count` funksiyalari
+- List
+    - List non-primitive turini tushunish.
+    - qo’shish metodlari: `append`, `insert`, `extend`
+    - o’chirish metodlari:`pop`, `remove`, `clear`
+    - qolgan funksiyalari: `index`, `count`, `reverse`, `sort`, `copy`
+    - list va tuple aralash ishlatish
+
+
+
+
+    Qisqa material
+
+     Tuple
+
+   Tuple haqida tushuncha
+
+Non-primitive typelar - bu bir nechta qiymatlarni o'z ichiga oladigan ma'lumotlar strukturasi 
+hisoblanadi. Python dasturlash tilida tuple bu turli xil ma'lumot turlarini bir joyga to'plash 
+imkonini beradi. Tuplelar o'z ichiga turli turdagi ma'lumotlarni (integer, string, list va hokazo) 
+olishi mumkin.
+
+Tuplelar yaratishda ochiq va yopiq qavslar `()` ishlatiladi. Masalan, `my_tuple = (1, 2, 3)`.
+
+
+## Tuplening asosiy funksiyalari
+
+index()
+
+index() funksiyasi tuple ichida ma'lum bir elementning joylashgan indeksini qaytaradi. Agar 
+element mavjud bo'lmasa, xato beradi.
+
+Sintaksis:
+
+         tuple_name.index(element)
+
+Misol:
+
+         my_tuple = (10, 20, 30, 40)
+         print(my_tuple.index(20))  # Natija: 1
+
+    count()
+
+count() funksiyasi tuple ichida berilgan element necha marta takrorlanganini hisoblaydi.
+
+Sintaksis:
+
+         tuple_name.count(element)
+
+Misol:
+
+         my_tuple = (10, 20, 30, 20, 40)
+         print(my_tuple.count(20))  # Natija: 2
+
+
+
+
+  List
+
+ List
+
+Python dasturlash tilida list bu turli xil ma'lumotlarni (integer, string, float va hokazo) o'z ichiga 
+olishi mumkin.
+
+Listlar o'zgaruvchan (mutable) bo'lib, buning natijasida ularni yaratgandan so'ng o'zgartirish 
+mumkin. Ularni yaratishda to'g'ri qavslar `[]` ishlatiladi. Masalan:
+
+          my_list = [1, 2, 3]
+
+
+   Listning asosiy funksiyalari
+
+   append()
+
+append() funksiyasi list oxiriga yangi element qo'shadi.
+
+Sintaksis:
+
+          list_name.append(element)
+
+Misol:
+
+          my_list = [1, 2, 3]
+          my_list.append(4)
+          print(my_list)  # Natija: [1, 2, 3, 4]
+
+
+     insert()
+
+ insert() funksiyasi belgilangan indeksda yangi element qo'shadi.
+
+ Sintaksis:
+
+         list_name.insert(index, element)
+        
+ Misol:
+
+         my_list = [1, 2, 3]
+         my_list.insert(1, 1.5)
+         print(my_list)  # Natija: [1, 1.5, 2, 3]
+
+
+extend()
+
+extend() funksiyasi boshqa listdagi elementlarni hozirgi listga qo'shadi.
+
+Sintaksis:
+
+         list_name.extend(another_list)
+
+Misol:
+
+         my_list = [1, 2]
+         my_list.extend([3, 4])
+         print(my_list)  # Natija: [1, 2, 3, 4]
+
+
+ pop()
+
+ pop() funksiyasi belgilangan indeksdagi elementni olib tashlaydi va uni qaytaradi. Agar indeks ko'rsatilmasa, oxirgi elementni olib tashlaydi.
+
+ Sintaksis:
+
+         list_name.pop(index)
+
+
+ Misol:
+
+         my_list = [1, 2, 3]
+         removed_item = my_list.pop(1)
+         print(my_list)  # Natija: [1, 3]
+         print(removed_item)  # Natija: 2
+
+ remove()
+
+ remove() funksiyasi berilgan elementni listdan olib tashlaydi. Agar element mavjud bo'lmasa, xato beradi.
+
+ Sintaksis:
+
+         list_name.remove(element)
+
+ Misol:
+
+         my_list = [1, 2, 3]
+         my_list.remove(2)
+         print(my_list)  # Natija: [1, 3]
+
+
+ clear()
+
+ clear() funksiyasi listni tozalaydi, ya'ni barcha elementlarni olib tashlaydi.
+
+ Sintaksis:
+
+         list_name.clear()
+
+
+ Misol:
+
+         my_list = [1, 2, 3]
+         my_list.clear()
+         print(my_list)  # Natija: []
+
+
+
+ Tushunarsiz joylarga izohlar
+
+- Non-primitive tipelar: Bir necha qiymatlarni saqlashga imkon beruvchi ma'lumotlar 
+strukturalari.
+- Immutable: O'zgarishi mumkin bo'lmagan ma'lumot turlari (masalan, tuple).
+- Mutable: O'zgarishi mumkin bo'lgan ma'lumot turlari (masalan, list).
+
+---
+
+ Xulosa
+
+Bu qismda biz tuple ma'lumot turini o'tdik, uning funksiyalari haqida ma'lumot oldik va listlar 
+bilan birga qanday ishlatilishini ko'rdik.
+
+Keyingi qismda biz list non-primitive turini o'rgandik, uning asosiy funksiyalari haqida ma'lumot 
+oldik va amaliy misollar orqali tushunishni chuqurlashtirdik.
